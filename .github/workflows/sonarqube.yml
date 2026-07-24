@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout Source Code
         uses: actions/checkout@v4
         with:
@@ -48,4 +47,4 @@ jobs:
         run: >
           mvn -B verify
           org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
-          -Dsonar.projectKey=DemoJava
+          -Dsonar.projectKey=TanlaPipeline
